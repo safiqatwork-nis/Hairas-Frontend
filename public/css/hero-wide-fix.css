@@ -1,0 +1,21 @@
+/* Wide, continuous hero artwork: keeps the copy readable without a hard image edge. */
+.hero,
+.product-page-hero,
+.about-page-hero,
+.contact-page-hero {
+  background-image:
+    linear-gradient(90deg, rgba(255, 253, 251, .98) 0%, rgba(255, 253, 251, .88) 29%, rgba(255, 253, 251, .28) 54%, rgba(255, 253, 251, 0) 72%),
+    url('../images/hairas-hero-wide.png') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+@media (max-width: 760px) {
+  .hero,
+  .product-page-hero,
+  .about-page-hero,
+  .contact-page-hero {
+    background-position: 62% center !important;
+  }
+}
