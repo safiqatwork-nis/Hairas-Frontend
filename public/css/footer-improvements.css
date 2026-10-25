@@ -1,0 +1,103 @@
+/* Larger, more legible footer using the supplied Hairas logo asset. */
+footer {
+  min-height: 355px;
+  padding: 52px max(5vw, 48px) 28px;
+}
+
+.footer-main {
+  gap: 46px;
+  align-items: start;
+  text-align: center;
+}
+
+.footer-brand .brand {
+  display: block;
+  width: 220px;
+  height: 105px;
+  min-width: 0;
+  background: url('../images/hairas-logo-final.jpeg') left center / 210px auto no-repeat;
+}
+
+.footer-brand .brand strong,
+.footer-brand .brand small {
+  visibility: hidden;
+}
+
+.footer-brand p {
+  font-size: 16px;
+  margin: 12px 0 20px;
+}
+
+.footer-main > div:not(:first-child) {
+  padding-left: 34px;
+  font-size: 15px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.footer-main b {
+  font-size: 17px;
+  margin-bottom: 11px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-brand .brand {
+  background-position: center center;
+}
+
+.footer-main a { margin-bottom: 8px; }
+.socials {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  color: #fff;
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+}
+
+.social-link svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer-bottom {
+  margin-top: 35px;
+  padding-top: 22px;
+  font-size: 13px;
+}
+
+.footer-bottom mark { padding: 6px 10px; }
+
+.nis6tech-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+}
+
+@media (max-width: 850px) {
+  footer { min-height: 0; padding: 38px 28px 24px; }
+  .footer-main { gap: 28px; }
+  .footer-brand .brand { width: 185px; height: 88px; background-size: 180px auto; }
+}
+
+@media (max-width: 500px) {
+  .footer-main > div:not(:first-child) { padding-left: 16px; font-size: 14px; }
+  .footer-brand p { font-size: 15px; }
+  .footer-bottom { font-size: 11px; }
+}

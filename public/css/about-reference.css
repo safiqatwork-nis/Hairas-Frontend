@@ -1,0 +1,57 @@
+/* Reference-matched About page */
+.about-reference { overflow:hidden; background:#fffdfa; }
+.about-ref-hero { min-height:540px; display:grid; grid-template-columns:44% 56%; position:relative; background:#fffdfa; }
+.about-hero-copy { padding:62px 4vw 44px max(5vw,52px); position:relative; z-index:2; display:flex; flex-direction:column; justify-content:center; }
+.about-hero-copy::before { content:''; position:absolute; width:280px; height:280px; left:-150px; bottom:-80px; background:url('../images/about-leaf-lavender.png') center/contain no-repeat; opacity:.22; transform:rotate(-35deg); pointer-events:none; }
+.about-hero-copy h1 { font-size:clamp(3.35rem,4.7vw,5rem); max-width:680px; letter-spacing:-.02em; }
+.about-hero-copy>p:not(.eyebrow) { font-size:19px; line-height:1.45; max-width:560px; margin:18px 0 25px; }
+.about-assurances { display:flex; gap:27px; flex-wrap:wrap; }
+.about-assurances span { display:flex; align-items:center; gap:9px; font-size:13px; font-weight:600; line-height:1.25; }
+.about-assurances svg { width:31px; height:31px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.about-hero-visual { min-height:540px; position:relative; background:url('../images/hairas-hero-wide.png') 62% center/cover no-repeat; border-bottom-left-radius:48% 24%; }
+.about-hero-visual::after { content:''; position:absolute; width:310px; height:310px; right:-100px; top:-90px; background:url('../images/about-leaf-lavender.png') center/contain no-repeat; opacity:.48; transform:rotate(12deg); }
+.about-care-note { position:absolute; left:23%; right:5%; bottom:0; min-height:92px; padding:20px 55px 20px 82px; background:linear-gradient(90deg,#eeeaff,#ded8ff); border-radius:30px 0 0 0; display:flex; align-items:center; color:var(--ink); font-size:17px; }
+.about-care-note::before { content:'♧'; position:absolute; left:24px; width:43px; height:43px; display:grid; place-items:center; background:#d2c7ff; border-radius:50%; font-size:25px; }
+.about-quote { min-height:235px; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:55px; padding:42px max(8vw,70px); color:#fff; background:linear-gradient(110deg,#17125d,#2f207d); position:relative; overflow:hidden; }
+.about-quote::before { content:''; position:absolute; width:270px; height:270px; left:-85px; top:-70px; background:url('../images/about-leaf-lavender.png') center/contain no-repeat; opacity:.18; filter:brightness(1.8); }
+.about-quote blockquote { margin:0; text-align:center; font:700 clamp(2.5rem,4vw,4.4rem)/1.05 'Playfair Display',serif; position:relative; }
+.about-quote div { border-left:1px solid #8d83cd; padding-left:48px; font-size:15px; line-height:1.55; max-width:520px; }
+.about-story { min-height:485px; display:grid; grid-template-columns:1.05fr .95fr; background:#fff; }
+.about-story-image { background:url('../images/hairas-hero.png') center/cover no-repeat; }
+.about-story-copy { padding:58px max(6vw,55px); display:flex; flex-direction:column; justify-content:center; position:relative; }
+.about-story-copy::after { content:''; position:absolute; width:260px; height:260px; right:-125px; top:-70px; background:url('../images/about-leaf-lavender.png') center/contain no-repeat; opacity:.28; transform:rotate(28deg); }
+.about-story-copy h2,.about-founder-copy h2 { font-size:clamp(2.8rem,4.2vw,4.5rem); }
+.about-story-copy p:not(.eyebrow) { max-width:600px; color:#514b8d; font-size:16px; line-height:1.55; }
+.about-founder { min-height:440px; display:grid; grid-template-columns:1.15fr .85fr; background:#1b1462; color:#fff; position:relative; }
+.about-founder-copy { padding:58px max(7vw,70px); display:flex; flex-direction:column; justify-content:center; background:linear-gradient(110deg,#17125b,#2b1d78); position:relative; z-index:2; clip-path:polygon(0 0,92% 0,100% 100%,0 100%); }
+.about-founder-copy::before { content:''; position:absolute; width:250px; height:250px; left:-75px; top:-80px; background:url('../images/about-leaf-lavender.png') center/contain no-repeat; opacity:.16; }
+.about-founder-copy p:not(.eyebrow) { max-width:650px; font-size:16px; line-height:1.55; }
+.about-founder-copy b { font-size:13px; margin-top:10px; }
+.about-founder-photo { background:url('../images/about-founder-v2.png') center/cover no-repeat; margin-left:-7%; }
+.about-mission-grid { display:grid; grid-template-columns:1fr 1fr; min-height:390px; }
+.about-purpose-card { min-width:0; padding:46px max(3.2vw,38px); position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:center; }
+.about-purpose-card h2 { font-size:clamp(1.9rem,2.2vw,2.5rem); line-height:1.04; max-width:520px; overflow-wrap:normal; }
+.about-purpose-card p:not(.eyebrow) { font-size:15px; line-height:1.55; max-width:470px; color:#514b8d; }
+.about-purpose-card.mission { background:linear-gradient(100deg,#fbfff9,#eef5e9); }
+.about-purpose-card.vision { background:linear-gradient(105deg,#eeeaff,#fbfaff); }
+.about-purpose-card::after { content:''; position:absolute; width:40%; height:82%; right:2%; bottom:1%; background-position:center; background-size:contain; background-repeat:no-repeat; opacity:.95; }
+.about-purpose-card.mission::after { background-image:url('../images/product-party-napkin.png'); }
+.about-purpose-card.vision::after { background-image:url('../images/product-kitchen-towels.png'); }
+.about-purpose-card.vision::before { content:''; position:absolute; width:290px; height:290px; right:-70px; top:-70px; background:url('../images/about-leaf-lavender.png') center/contain no-repeat; opacity:.38; z-index:2; }
+.about-purpose-card>* { position:relative; z-index:3; max-width:56%; }
+.about-values { min-height:340px; padding:46px max(5vw,48px); position:relative; background:#fff; }
+.about-values::after { content:''; position:absolute; right:-80px; bottom:-90px; width:280px; height:280px; background:url('../images/about-leaf-lavender.png') center/contain no-repeat; opacity:.24; }
+.values-heading { display:flex; align-items:end; gap:45px; margin-bottom:32px; }
+.values-heading h2 { font-size:clamp(2.8rem,4vw,4.3rem); }
+.values-heading p { max-width:430px; color:#514b8d; font-size:14px; }
+.about-values-grid { display:grid; grid-template-columns:repeat(4,1fr); position:relative; z-index:2; }
+.about-value { padding:3px 28px; border-right:1px solid #ddd8ee; }
+.about-value:last-child { border:0; }
+.about-value svg { width:43px; height:43px; fill:none; stroke:var(--ink); stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.about-value h3 { font:700 17px 'DM Sans',sans-serif; margin:12px 0 8px; }
+.about-value p { color:#5c5791; font-size:13px; line-height:1.45; }
+.about-newsletter { min-height:130px; margin:0; padding:28px max(6vw,55px); border-radius:0; background:linear-gradient(105deg,#20156b,#3e268e); }
+.about-newsletter h2 { font-size:clamp(2rem,3vw,3.1rem); max-width:none; }
+.about-newsletter p { font-size:14px; }
+@media(max-width:900px){.about-ref-hero,.about-story,.about-founder,.about-mission-grid{grid-template-columns:1fr}.about-hero-visual{min-height:420px}.about-quote{grid-template-columns:1fr;text-align:center}.about-quote div{border-left:0;border-top:1px solid #8d83cd;padding:25px 0 0;max-width:none}.about-story-image{min-height:370px}.about-founder-copy{clip-path:none}.about-founder-photo{min-height:390px;margin:0}.about-purpose-card{min-height:390px}.about-values-grid{grid-template-columns:1fr 1fr;gap:25px}.about-value:nth-child(2){border-right:0}.values-heading{display:block}.about-newsletter{display:block}.about-newsletter form{margin-top:20px}}
+@media(max-width:560px){.about-hero-copy{padding:45px 24px}.about-assurances{display:grid}.about-hero-visual{min-height:330px}.about-care-note{left:8%;font-size:14px}.about-quote{padding:38px 24px}.about-story-copy,.about-founder-copy,.about-purpose-card{padding:42px 24px}.about-values{padding:40px 20px}.about-values-grid{grid-template-columns:1fr}.about-value{border-right:0;border-bottom:1px solid #ddd8ee;padding:20px 5px}.about-newsletter{padding:32px 22px}}

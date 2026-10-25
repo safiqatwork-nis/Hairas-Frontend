@@ -1,0 +1,21 @@
+/* Supplied transparent Hairas logo for both header and footer. */
+.header .brand {
+  background-image: url('../images/hairas-logo-transparent.png') !important;
+  background-size: 150px auto !important;
+  background-position: left center !important;
+}
+
+.footer-brand .brand {
+  background-color: #fffdf9;
+  background-image: url('../images/hairas-logo-transparent.png') !important;
+  background-position: center center !important;
+  background-size: 210px auto !important;
+  background-repeat: no-repeat !important;
+  border-radius: 12px;
+  padding: 5px 10px;
+}
+
+@media (max-width: 850px) {
+  .header .brand { background-size: 135px auto !important; }
+  .footer-brand .brand { background-size: 180px auto !important; }
+}
